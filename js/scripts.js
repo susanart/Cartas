@@ -8,3 +8,27 @@ async function leerJSON(url) {
     }
   }
 
+  function mostrar() {
+    var url = "https://raw.githubusercontent.com/susanart/Cartas/main/cartas.json";
+    var table = "";
+        leerJSON(url).then((cartas) => {
+        cartas.forEach((cartas1) => {
+          
+            table += `
+                <tr>
+                  <td>${cartas1.numero}</td>
+                  <td>${cartas1.carta}</td>
+                  <td>${cartas1.cantidad}</td>
+                </tr>
+             
+            `;
+        });
+        document.getElementById("contenido").innerHTML = table;
+      })
+  }
+
+  mostrar();
+
+
+
+  

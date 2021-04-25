@@ -1,7 +1,16 @@
 [
-	{"numero": "1","carta": "As", "valor" : 0},
-	{"numero": "2","carta": "1", "valor" : 0},
-	{"numero": "3","carta": "2", "valor" : 0},
-	{"numero": "4","carta": "3", "valor" : 0},
-	{"numero": "5","carta": "4", "valor" : 0}
+	{"numero": "1","carta": "As de Diamantes", "valor" : 0},
+	{"numero": "2","carta": "Dos de Diamante", "valor" : 0},
+	{"numero": "3","carta": "Tres de de Diamantes", "valor" : 0},
+	{"numero": "4","carta": "Cuatro de de Corazones", "valor" : 0},
+	{"numero": "5","carta": "Cinco de Corazones", "valor" : 0},
+	{"numero": "6","carta": "Seis de Treboles", "valor" : 0},
+	{"numero": "7","carta": "Siete de Diamantes", "valor" : 0},
+	{"numero": "8","carta": "8 de Treboles", "valor" : 0},
+	{"numero": "9","carta": "Nueve de Diamantes", "valor" : 0},
+	{"numero": "10","carta": "Diez de Corazones", "valor" : 0},
+	{"numero": "11","carta": "J de trebol", "valor" : 0},
+	{"numero": "12","carta": "Q de picas", "valor" : 0},
+	{"numero": "13","carta": "K de Diamante", "valor" : 0}
+
 ]

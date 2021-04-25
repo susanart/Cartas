@@ -1,68 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cartas</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header id="header">
-        <a href="" src="index.html" >
-            <img src="img/logo.jpg" class="header-logo" alt="" />
-        </a> 
-    </header>
-    <section class="cartas">
-      <div class="">
-        <div class="row">
-          <div class="col">
-            <div class="">
-              <img class="carta" src="../img/1.png" alt="" onclick=""/>
-              <img class="carta" src="../img/2.png" alt=""onclick=""/>
-              <img class="carta" src="../img/4.png" alt="" onclick=""/>
-              <img class="carta" src="../img/5.png" alt="" onclick=""/>
-              <img class="carta" src="../img/3.png" alt="" onclick=""/>
-              <img class="carta" src="../img/6.png" alt="" onclick=""/>
-              <img class="carta" src="../img/7.png" alt="" onclick=""/>
-              <img class="carta" src="../img/8.png" alt="" onclick=""/>
-              <img class="carta" src="../img/9.png" alt="" onclick=""/>
-              <img class="carta" src="../img/10.png" alt="" onclick=""/>
-              <img class="carta" src="../img/11.png" alt="" onclick=""/>
-              <img class="carta" src="../img/12.png" alt="" onclick=""/>
-              <img class="carta" src="../img/13.png" alt="" onclick=""/>
-            </div>
-          </div>
-          <div class="col">
-            <table class="table" id="table__contenido">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Carta</th>
-                  <th>Cant</th>
-                </tr>
-              </thead>
-              <tbody id="contenido" class="table">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body__login">
+  <header>
+    <img class="header-logo" src="img/logo.jpg" alt="">
+  </header>
+  <form class="formulario" action="">
+      <fieldset>
+          <legend>Inicio de Sesión</legend>
+        <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="name">Usuario</label>
+                    <input name="name"  class="input-text" type="text" required>
+                </div>
 
-              </tbody>
-            </table>
-            <div class="">
-              <h5 class="">Registro cartas</h5>
-              <form action="#">
-                <label class=""> Número </label>
-                <input type="text" id="" class="" required />
-                <label class="">Carta</label>
-                <input type="text" id="" class="" required />
-                <p class="" id=""></p>
-                <button type="submit" class="" id="">
-                  Guardar
-                </button>
-              </form>
-            </div>
-          </div>
+                <div class="campo">
+                    <label for="asunto">Contraseña</label>
+                    <input name="subject" class="input-text" type="password" required >
+                </div>
+        </div>  <!-- Este es el contenedor de los campos -->
+        <div >
+              <input class="boton w-sm-100" type="submit" value="Ingresar">
         </div>
-      </div>
-    </section>
-    <script src="js/scripts.js"></script>
-  </body>
+      </fieldset>
+  </form>
+<script src="js/scripts.js"></script>
+</body>
 </html>

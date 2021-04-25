@@ -1,10 +1,4 @@
 :root {
-  --blanco: #ffffff;
-  --primario: #ffc107; 
-  --azul: #0097A7; 
-  --gris: #757575; 
-  --rosa:  rgb(247, 152, 247);
-  --violeta: rgb(170, 30, 189);
   --rojo: rgb(226, 35, 35); 
   --negro: rgb(0, 0, 0); 
 
@@ -13,6 +7,11 @@
 html{
   font-size: 62.5%;
   box-sizing: border-box; /** Hack para box Model **/
+}
+
+span {
+  color:var(--rojo);
+  font-size: large;
 }
 
 .body__login{

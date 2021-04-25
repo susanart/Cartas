@@ -43,7 +43,11 @@ form.onsubmit = () => {return false}
 login.onclick = () => {
   if((input[0].value != "") && (input[1].value != "")){
     if((input[0].value == sessionStorage.getItem("usuario")) && (input[1].value == sessionStorage.getItem("password"))){
-      form.onsubmit = () => {return 1}
+      form.onsubmit = () => {return true}
+      // document.cookie = "usuario" + input[0].value;
+      // document.cookie = "password" + input[1].value;
+      console.log(input[0].value);
+      console.log(input[1].value);
     } else{
       if (input[0].value != sessionStorage.getItem("usuario")){
         input[0].nextElementSibling.textContent = "Usuario incorrecto";

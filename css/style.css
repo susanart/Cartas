@@ -1,7 +1,25 @@
-* {
-    font-family: "Karla", sans-serif;
-    font-size: 16px;
-  }
+:root {
+  --blanco: #ffffff;
+  --primario: #ffc107; 
+  --azul: #0097A7; 
+  --gris: #757575; 
+  --rosa:  rgb(247, 152, 247);
+  --violeta: rgb(170, 30, 189);
+  --rojo: rgb(226, 35, 35); 
+  --negro: rgb(0, 0, 0); 
+
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box; /** Hack para box Model **/
+}
+
+.body__login{
+  font-size: 16px; /* 1rem=10px */
+  font-family: 'Krub', sans-serif;
+}
+
   /* Header */
   .header {
     width: 100%;
@@ -11,6 +29,10 @@
   
   .header-logo {
     height: 100px;
+    display: block;
+    margin: auto;
+    padding: 2rem;
+    
   }
  /* Contenedor */
   .contenedor {
@@ -47,6 +69,102 @@
     text-align: center;
   }
   
+  
+.boton {
+  background-color: var(--rojo);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: .5rem;
+  text-align: center;
+  border: none;
+}
+
+
+/*Formulario*/
+
+
+.formulario {
+  background-color: var(--blanco);
+  width: auto;
+  margin: 1rem auto; 
+  padding: 2rem;
+  border: black 1rem dotted;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .formulario {
+    background-color: var(--blanco);
+    width: min(60rem, 100%); 
+    margin: 1rem auto; 
+    padding: 2rem;
+    border: black 1rem dotted;
+    height: auto;
+  }
+
+}
+
+.formulario fieldset {
+  border: none;
+  margin-right: 3rem;
+ 
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--rojo);
+}
+
+@media (min-width: 768px) {
+  .contenedor-campos {
+      display: block;
+  }
+}
+
+.campo {
+  margin-bottom: 1rem;
+  height: auto;
+}
+
+.campo label {
+  color: var(--negro);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+  
+}
+
+
+input {
+  height: auto;
+}
+
+.campo input {
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: var(--negro);
+  background-color: #f7f7f7;
+  
+  
+}
+
+.input-text {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  border-style: solid; 
+}
+
   
   
   

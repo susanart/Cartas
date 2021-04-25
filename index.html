@@ -11,22 +11,22 @@
   <header>
     <img class="header-logo" src="img/logo.jpg" alt="">
   </header>
-  <form class="formulario" action="">
+  <form class="formulario" action="html/cartas.html" method="POST">
       <fieldset>
           <legend>Inicio de Sesión</legend>
         <div class="contenedor-campos">
                 <div class="campo">
-                    <label for="name">Usuario</label>
-                    <input name="name"  class="input-text" type="text" required>
+                    <label for="usuario">Usuario</label>
+                    <input name="usuario"  class="input-text" type="text" required>
                 </div>
 
                 <div class="campo">
-                    <label for="asunto">Contraseña</label>
-                    <input name="subject" class="input-text" type="password" required >
+                    <label for="password">Contraseña</label>
+                    <input name="password" class="input-text" type="password" required >
                 </div>
         </div>  <!-- Este es el contenedor de los campos -->
         <div >
-              <input class="boton w-sm-100" type="submit" value="Ingresar">
+              <input class="boton w-sm-100" id="login" type="submit" value="Ingresar">
         </div>
       </fieldset>
   </form>

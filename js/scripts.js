@@ -1,3 +1,4 @@
+//----------Mostrar JSON-------------//
 async function leerJSON(url) {
   try {
     let response = await fetch(url);
@@ -18,7 +19,7 @@ function mostrar() {
               <tr>
                 <td>${cartas1.numero}</td>
                 <td>${cartas1.carta}</td>
-                <td>${cartas1.cantidad}</td>
+                <td>${cartas1.valor}</td>
               </tr>
            
           `;
@@ -26,18 +27,40 @@ function mostrar() {
       document.getElementById("contenido").innerHTML = table;
     })
 }
+// Cartas 
 
+function cargarCarta(carta){
+  let boton = document.getElementById('guardar')
+  let numeroCarta = document.getElementById('numero__carta')
+  let nombreCarta = document.getElementById('nombre__carta')
+  let cantidad = 1;
+  boton.onclick = () => {
+    var table = "";
+    console.log("entre");
+          table += `
+              <tr>
+                <td>${numeroCarta}</td>
+                <td>${nombreCarta}</td>
+                <td>${cantidad}</td>
+              </tr>
+           
+          `;
+      document.getElementById("contenido").innerHTML = table;
+  }
+  
+}
 mostrar();
+//----------Inicio de sesión-------------//
 
 window.onload = () => {
-  this.sessionStorage.setItem("usuario","usuario");
-  this.sessionStorage.setItem("password","12345");
+  this.sessionStorage.setItem("usuario","admin");
+  this.sessionStorage.setItem("password","1234");
 }
 
 //variables 
-var input = document.getElementsByTagName('input')
-var login = document.getElementById('login')
-var form = document.querySelector('form')
+let input = document.getElementsByTagName('input')
+let login = document.getElementById('login')
+let form = document.querySelector('form')
 
 form.onsubmit = () => {return false}
 

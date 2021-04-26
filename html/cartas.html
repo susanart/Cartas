@@ -11,13 +11,11 @@
     <header id="header">
             <img src="../img/logo.jpg" class="header-logo" alt="" />
     </header>
-    <section class="cartas">
-      <div class="">
+    <section class="contenedor">
         <div class="row">
-          <div class="col">
-            <div class="">
+          <div class="col contenedor__cartas">
               <img class="carta" src="../img/1.png" alt="" onclick=""/>
-              <img class="carta" src="../img/2.png" alt=""onclick=""/>
+              <img class="carta" src="../img/2.png" alt=""onclick=)"/>
               <img class="carta" src="../img/4.png" alt="" onclick=""/>
               <img class="carta" src="../img/5.png" alt="" onclick=""/>
               <img class="carta" src="../img/3.png" alt="" onclick=""/>
@@ -29,37 +27,40 @@
               <img class="carta" src="../img/11.png" alt="" onclick=""/>
               <img class="carta" src="../img/12.png" alt="" onclick=""/>
               <img class="carta" src="../img/13.png" alt="" onclick=""/>
-            </div>
           </div>
           <div class="col">
             <table class="table" id="table__contenido">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Carta</th>
-                  <th>Cant</th>
-                </tr>
-              </thead>
-              <tbody id="contenido" class="table">
-
-              </tbody>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Carta</th>
+                    <th>Cant</th>
+                  </tr>
+                </thead>
+                <tbody id="contenido" class="table"></tbody>
             </table>
             <div class="">
-              <h5 class="">Registro cartas</h5>
-              <form action="#">
-                <label class=""> Número </label>
-                <input type="text" id="" class="" required />
-                <label class="">Carta</label>
-                <input type="text" id="" class="" required />
-                <p class="" id=""></p>
-                <button type="submit" class="" id="">
-                  Guardar
-                </button>
-              </form>
+                  <form action="#" class="formulario__cartas">
+                    <fieldset>
+                      <legend>Registro cartas</legend>
+                      <div class="contenedor-campos">
+                          <div class="campo">
+                              <label class=""> Número </label>
+                              <input type="text" id="numero__carta" class="input-text" required />
+                          </div>
+                          <div class="campo">
+                              <label class="">Carta</label>
+                              <input type="text" id="nombre__carta" class="input-text" required />
+                          </div>
+                     </div>
+                     <div>
+                        <button type="submit" class="boton" id="guardar">Guardar</button>
+                     </div> 
+                    </fieldset>
+                  </form>
             </div>
           </div>
         </div>
-      </div>
     </section>
     <script src="../js/scripts.js"></script>
   </body>

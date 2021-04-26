@@ -52,26 +52,40 @@ span {
   }
   
   /* Cartas */
-
   .carta {
     height: 200px;
+    padding: 2px;
+    padding-bottom: 1rem;
+  }
+
+  .formulario__cartas {
+    width: auto;
+    height: auto;
+    margin: 1rem auto; 
+    padding: 2rem;
+    padding-left: 0%;
+    padding-top: 5rem;
   }
   
   /* Table Style*/
-  
+  table th {background-color:  rgb(238, 73, 73); }
+  table tr:nth-child(odd) {background-color: rgb(251, 251, 251);}
+  table tr:nth-child(even) {background-color: rgb(247, 131, 131);}
+
   .table {
     border-collapse:collapse;
-    font-size: 16px;
-    width: 100%;
-    background-color: lavenderblush;
-    border-radius: initial;
+    border-style: solid;
+    border-color: var(--rojo);
+    font-size: 18px;
+    width: 90%;
     text-align: center;
   }
   
   
+  
 .boton {
   background-color: var(--rojo);
-  color: var(--blanco);
+  color:blanchedalmond;
   padding: 1rem 3rem;
   margin-top: 1rem;
   font-size: 2rem;
@@ -108,12 +122,14 @@ span {
 
 }
 
+.formulario__cartas,
 .formulario fieldset {
   border: none;
   margin-right: 3rem;
  
 }
 
+.formulario__cartas,
 .formulario legend {
   text-align: center;
   font-size: 1.8rem;
@@ -139,12 +155,6 @@ span {
   font-weight: bold;
   margin-bottom: .5rem;
   display: block;
-  
-}
-
-
-input {
-  height: auto;
 }
 
 .campo input {
@@ -153,7 +163,7 @@ input {
   border-width: 1px; 
   border-color: var(--negro);
   background-color: #f7f7f7;
-  
+  width: 80%;  
   
 }
 
@@ -162,6 +172,7 @@ input {
   padding: 1.5rem;
   border-radius: .5rem;
   border-style: solid; 
+  
 }
 
   
